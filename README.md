@@ -9,6 +9,11 @@ Essa atividade busca a criação de uma API utilizando Laravel para gerenciar o 
 - Buscar Departamento de um Funcionário
 - Buscar Funcionários de um Departamento
 
+## Collection do Postman - [LINK](https://github.com/hribes/laravel_genrencia_rh/blob/main/Atividade%20-%20rh%20gerencia.postman_collection.json)
+
+
+
+
 ---
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
