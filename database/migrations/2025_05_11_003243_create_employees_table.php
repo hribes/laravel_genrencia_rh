@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('cpf');
-            $table->string('date_birth');
+            $table->date('date_birth');
 
             $table->unsignedBigInteger('department_id');
             $table->foreign('department_id')->references('id')->on('departments')->onDelete('cascade');
