@@ -1,3 +1,16 @@
+# Faculdade - Criação de API
+Essa atividade busca a criação de uma API utilizando Laravel para gerenciar o RH de uma empresa. Nela deve-se cadastrar funcionários e departamentos, na qual cada funcionário trabalha em um departamento e cada departamento terá vários funcionários.
+
+## Funcionalidades
+- Criar, Listar, Buscar por Id, Atualizar, Deletar Funcionários
+- Criar, Listar, Buscar por Id, Atualizar, Deletar Departamentos
+- Listar Funcionários com seus Departamentos
+- Listar Departamento com seus Funcionários
+- Buscar Departamento de um Funcionário
+- Buscar Funcionários de um Departamento
+
+---
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
