@@ -34,20 +34,46 @@ Route::get('department', function (){
     return response ()->json($department);
 });
 
-Route::get('department/{id}', function($id){
-    $department = Department::find($id);
-    return response()->json($department);
-});
-
 Route::get('employees', function (){
     $employees = Employees::all();
     return response ()->json($employees);
+});
+
+Route::get('employees/department', function(){
+    $employees = Employees::with('department')->get();
+
+    return response() ->json($employees);
+});
+
+Route::get('department/employees', function(){
+    $department = Department::with('employees')->get();
+
+    return response() ->json($department);
+});
+
+Route::get('department/{id}', function($id){
+    $department = Department::find($id);
+    return response()->json($department);
 });
 
 Route::get('employees/{id}', function($id){
     $employees = Employees::find($id);
     return response()->json($employees);
 });
+
+
+Route::get('department/employees/{id}', function($id){
+    $department = Department::find($id);
+    $employees = $department->employees;
+    return response()->json($employees);
+});
+
+Route::get('employees/department/{id}', function($id){
+    $employees = Employees::find($id);
+    $department = $employees->department;
+    return response()->json($department);
+});
+
 
 //PATCH
 Route::patch('department/{id}', function(Request $request, $id){
